@@ -5,6 +5,7 @@
 
 ## 使用言語
 python 3.9.5
+
 実行方法
 `python3 .\wikipedia_path_finder.py`
 
