@@ -13,6 +13,7 @@ python 3.9.5
 最短ルートを探さなければいけないため、探しているnodeを初めて見つけた場合、それが最短ルートになる幅優先探索を行う。
 
 入力：links, 探索開始ページID (root node), 探索目標ページID (target node)
+
 出力： 最短ルートで通ったnodeのリスト 
 
 初期化としてroot nodeをキューと探索済みかを確認するために使う辞書のvisitedに追加する。
@@ -24,7 +25,12 @@ whileループを使い以下のプロセスをキューの最初の要素(node)
 最初のnodeがtarget nodeの場合、connectionに入っている親IDと子IDのペアを使い、子IDからルートを逆引きし、リストにして返す。
 最後にルートで通ったページの名前を表示する。
 
-ただし、このアルゴリズムの場合、もし複数の最短ルートがあっても一番最初に現れたものしか認識・表示しない。
+ただし、このアルゴリズムの場合、もし複数の最短ルートがあっても一番最初に到達したものしか認識・表示しない。
+
+## 確認したルート 
+`Google (ID: 457783 ) フジテレビジョン (ID: 189152 ) 渋谷 (ID: 22557 )`
+`Google (ID: 457783 ) セグウェイ (ID: 154009 ) 渋谷 (ID: 22557 )`
+`Google (ID: 457783 ) フレッシュアイ (ID: 579364 ) 渋谷 (ID: 22557 )`
 
 ***
 
@@ -41,6 +47,7 @@ For links.txt, store values in a dictionary where the key is the ID and value co
 In order to find the shortest path from a node to another node, BFS is optimal; therefore used to solve this problem. 
 
 Input: links, root ID, target ID
+
 Output: list containing the IDs of the path taken
 
 Initialize with inputting the root node into queue and the visited dictionary.

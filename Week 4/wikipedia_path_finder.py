@@ -37,7 +37,7 @@ def find_path(child_node: str, connection: dict[str, str]) -> list[str]:
 
 def print_path(path: list[str], pages: dict[str, str]):
   for nodes in path:
-    print(pages[nodes], "(ID:", nodes,")")
+    print(pages[nodes], "(ID:",nodes,")")
   return None
 
 def bfs(links: dict[str, set[str]], starting_node: str, target_node: str) -> list[str]:
