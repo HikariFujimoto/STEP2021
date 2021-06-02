@@ -1,0 +1,7 @@
+.vscode/
+data/
+step2-master/
+Test/
+*.class
+*.out
+*.zip
