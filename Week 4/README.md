@@ -6,6 +6,7 @@
 
 ## 準備
 以下のようなディレクトリ構成で実行してください。
+```
 FILE_NAME
 ├── data
 │   ├── graph_small.png
@@ -14,6 +15,7 @@ FILE_NAME
 │   ├── pages_small.txt
 │   └── pages.txt
 └── wikipedia_path_finder.py
+```
 
 ## 使用言語
 python 3.9.5
@@ -55,6 +57,7 @@ Using the given pages and link (found at [this link](https://drive.google.com/fi
 
 ## Preparation
 Please execute the program with the following directory structure:
+```
 FILE_NAME
 ├── data
 │   ├── graph_small.png
@@ -63,6 +66,7 @@ FILE_NAME
 │   ├── pages_small.txt
 │   └── pages.txt
 └── wikipedia_path_finder.py
+```
 
 ## Algorithm 
 #### Reading Data (Sample program provided)
