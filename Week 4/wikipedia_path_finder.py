@@ -28,7 +28,8 @@ def find_id(pages: dict[str, str], name: str) -> str:
   raise Exception ("Item not found")
 
 def find_path(child_node: str, connection: dict[str, str]) -> list[str]:
-  if child_node not in connection:
+  # recursion to return string list of path taken
+  if connection[child_node] == 'root_node':
     return [child_node]
   else:
     path = find_path(connection[child_node], connection)
@@ -43,8 +44,8 @@ def print_path(path: list[str], pages: dict[str, str]):
 def bfs(links: dict[str, set[str]], starting_node: str, target_node: str) -> list[str]:
   queue = deque()
   queue.append(starting_node)
-  visited = {starting_node}
-  connection = {} 
+  visited = {}
+  visited[starting_node] = 'root_node'
   while queue:
     if queue[0] != target_node:
       # add adjacent nodes of queue[0] that is not in visited, into queue and visited
@@ -52,11 +53,10 @@ def bfs(links: dict[str, set[str]], starting_node: str, target_node: str) -> lis
         for adjacent_node in links[queue[0]]:
           if adjacent_node not in visited:
             queue.append(adjacent_node)
-            visited.add(adjacent_node)
-            connection[adjacent_node] = queue[0]
+            visited[adjacent_node] = queue[0]
       queue.popleft()
     else: # when queue == target_node
-      return find_path(target_node, connection)
+      return find_path(target_node, visited)
   raise Exception("Path not found")
 
 if __name__ == '__main__':
