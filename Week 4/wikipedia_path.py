@@ -47,7 +47,7 @@ def bfs(links: dict[str, set[str]], starting_node: str, target_node: str) -> lis
   connection = {} 
   while queue:
     if queue[0] != target_node:
-      # add adjacent nodes of queue[0] not visited into the queue and visited(set)
+      # add adjacent nodes of queue[0] that is not in visited, into queue and visited
       if queue[0] in links:
         for adjacent_node in links[queue[0]]:
           if adjacent_node not in visited:
