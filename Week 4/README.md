@@ -3,6 +3,18 @@
 ## 課題内容
 与えられたWikipediaのページとリンク集を使い、'Google'から'渋谷'までの最短ルートを探す。
 
+
+## 準備
+以下のようなディレクトリ構成で実行してください。
+FILE_NAME
+├── data
+│   ├── graph_small.png
+│   ├── links_small.txt
+│   ├── links.txt
+│   ├── pages_small.txt
+│   └── pages.txt
+└── wikipedia_path_finder.py
+
 ## 使用言語
 python 3.9.5
 
@@ -39,7 +51,18 @@ whileループを使い以下のプロセスをキューの最初の要素(node)
 ***
 
 ## Assignment
-Using the given pages and link (found at [this link](https://github.com/yukidmy/step_wikipedia-graph)) find the shortest path from 'Google' to '渋谷'
+Using the given pages and link (found at [this link](https://drive.google.com/file/d/1zqtjSb-ZoR4rzVUWZrjNSES5GKJhYmmH/view)) find the shortest path from 'Google' to '渋谷'
+
+## Preparation
+Please execute the program with the following directory structure:
+FILE_NAME
+├── data
+│   ├── graph_small.png
+│   ├── links_small.txt
+│   ├── links.txt
+│   ├── pages_small.txt
+│   └── pages.txt
+└── wikipedia_path_finder.py
 
 ## Algorithm 
 #### Reading Data (Sample program provided)
