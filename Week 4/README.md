@@ -29,18 +29,24 @@ whileループを使い以下のプロセスをキューの最初の要素(node)
 
 ## 確認したルート 
 `Google (ID: 457783 ) フジテレビジョン (ID: 189152 ) 渋谷 (ID: 22557 )`
+
 `Google (ID: 457783 ) セグウェイ (ID: 154009 ) 渋谷 (ID: 22557 )`
+
 `Google (ID: 457783 ) フレッシュアイ (ID: 579364 ) 渋谷 (ID: 22557 )`
+
+`Google (ID: 457783 ) スターバックス (ID: 22188 ) 渋谷 (ID: 22557 )`
 
 ***
 
 ## Assignment
-Using the given pages and link (found at [this link](https://github.com/yukidmy/step_wikipedia-graph)) look for the shortest path from 'Google' to '渋谷'
+Using the given pages and link (found at [this link](https://github.com/yukidmy/step_wikipedia-graph)) find the shortest path from 'Google' to '渋谷'
 
 ## Algorithm 
 #### Reading Data (Sample program provided)
 Read content of pages.txt and links.txt. 
+
 For pages.txt, store values in a dictionary where the key is the ID and value is the title of the page. 
+
 For links.txt, store values in a dictionary where the key is the ID and value contains set of all ID adjacent to key.
 
 #### Path finding using BFS
