@@ -41,11 +41,11 @@ def print_path(path: list[str], pages: dict[str, str]):
     print(pages[nodes], "(ID:",nodes,")")
   return None
 
-def bfs(links: dict[str, set[str]], starting_node: str, target_node: str) -> list[str]:
+def bfs(links: dict[str, set[str]], root_node: str, target_node: str) -> list[str]:
   queue = deque()
-  queue.append(starting_node)
+  queue.append(root_node)
   visited = {}
-  visited[starting_node] = 'root_node'
+  visited[root_node] = 'root_node'
   while queue:
     if queue[0] != target_node:
       # add adjacent nodes of queue[0] that is not in visited, into queue and visited
