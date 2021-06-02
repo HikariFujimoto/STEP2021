@@ -19,6 +19,7 @@ whileループを使い以下のプロセスをキューの最初の要素(node)
 - キューの最初のnodeがtarget nodeかチェックする
 - ちがう場合、visitedに入っていない隣接しているnodeをキューとvisitedに追加する。同時に親IDと子IDのペアを辞書connectionに追加する。(あとでルートを示すのに使用)
 - 全ての隣接しているnodeを追加し終わったら、nodeをキューからpopする。
+
 最初のnodeがtarget nodeの場合、connectionに入っている親IDと子IDのペアを使い、子IDからルートを逆引きし、リストにして返す。
 最後にルートで通ったページの名前を表示する。
 
@@ -46,6 +47,7 @@ Use while loop to repeat the following process until the target node is reached:
 - Check if the first node in queue is not the target node.
 - If not, add all neighboring nodes that is not yet visited into the queue. Store the parent ID and child ID in connection to track the path later.
 - Once all neighboring nodes are added, pop node from queue.
+
 When first node is the target node, return the list containing the path; created by using the child-parent ID pair in connection.
 Finally, print the page title of the links in the path.
 
