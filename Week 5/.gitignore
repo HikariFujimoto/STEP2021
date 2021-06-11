@@ -1,0 +1,7 @@
+/visualizer/node_modules
+.python-version
+sample/
+input/
+solver_greedy/
+test/
+__py_cache__/*

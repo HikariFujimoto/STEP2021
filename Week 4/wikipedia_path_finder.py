@@ -1,4 +1,3 @@
-from typing import Deque
 from collections import deque
 
 def read_file():
