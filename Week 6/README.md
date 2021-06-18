@@ -64,8 +64,8 @@ Time: 649134ms  Utilization: 7%
 ```
 
 ## Analysis
-For execution time, first fit is faster than best fit for challenges 1~3.
-But, overall memory utilization is better for best fit, especially for challenges 3~5. 
+For execution time, first fit is faster than best fit for challenges 1 to 3.
+But, overall memory utilization is better for best fit, especially for challenges 3 to 5. 
 The best fit's execution time is better than best fit for challenges 4 and 5, therefore conclude best fit is more suited for memory alloacation.
 
 ## Further Improvement
