@@ -1,7 +1,5 @@
-/visualizer/node_modules
-.python-version
+.visualizer/
 sample/
-input/
-solver_greedy/
-test/
-__py_cache__/*
+*input
+solver_greedy
+__pycache__/
