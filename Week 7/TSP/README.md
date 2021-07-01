@@ -28,6 +28,7 @@ Although this algorithm executes decently fast, the result may not be the best. 
 ## Evaluation
 The result of nearest insertion algorithm + multiple runs from random starting point generally resulted in a better score than the greedy solution. 
 Following tables are the results of actual execution:
+
 Challenge 6:
 |                   | Starting from 0 | Random start + 20 runs #1 | Random start + 20 runs #2 |
 |-------------------|:---------------:| -------------------------:| -------------------------:|
